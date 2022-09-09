@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220831 10:21:38.533" rpa="false" schemaversion="2">
+<suite id="s1" name="HomePage" source="C:\Users\MPN\Documents\FlutterAutomation\TestCase\HomePage.robot">
+<test id="s1-t1" name="Click Element">
+<kw name="Open App" library="keywords">
+<kw name="Open Application" library="AppiumFlutterLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>automationName=flutter</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP}</arg>
+<arg>appPackage=com.example.counter_app_robot</arg>
+<arg>appActivity=com.example.counter_app_robot.MainActivity</arg>
+<doc>Opens a new application to given Appium server.</doc>
+<msg timestamp="20220831 10:21:54.611" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\MPN\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s fef1bb61 install C\:/Users/MPN/Documents/FlutterAutomation/app-debug.apk' exited with code 1'; Command output: adb: failed to install C:/Users/MPN/Documents/FlutterAutomation/app-debug.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]
+
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\MPN\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s fef1bb61 install C\:/Users/MPN/Documents/FlutterAutomation/app-debug.apk' exited with code 1'; Command output: adb: failed to install C:/Users/MPN/Documents/FlutterAutomation/app-debug.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]
+
+    at getResponseForW3CError (C:\Users\MPN\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\MPN\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<status status="FAIL" starttime="20220831 10:21:38.847" endtime="20220831 10:21:54.612"/>
+</kw>
+<status status="FAIL" starttime="20220831 10:21:38.846" endtime="20220831 10:21:54.614"/>
+</kw>
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${Button_increment_key}</arg>
+<doc>Tap the specified element.</doc>
+<status status="NOT RUN" starttime="20220831 10:21:54.615" endtime="20220831 10:21:54.615"/>
+</kw>
+<kw name="Click Element" library="AppiumFlutterLibrary">
+<arg>${Button_increment}</arg>
+<doc>Tap the specified element.</doc>
+<status status="NOT RUN" starttime="20220831 10:21:54.616" endtime="20220831 10:21:54.616"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220831 10:21:54.616" endtime="20220831 10:21:54.616"/>
+</kw>
+<kw name="Close Application" library="AppiumFlutterLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20220831 10:21:54.617" endtime="20220831 10:21:54.617"/>
+</kw>
+<status status="FAIL" starttime="20220831 10:21:38.846" endtime="20220831 10:21:54.618">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\MPN\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s fef1bb61 install C\:/Users/MPN/Documents/FlutterAutomation/app-debug.apk' exited with code 1'; Command output: adb: failed to install C:/Users/MPN/Documents/FlutterAutomation/app-debug.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]
+
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\MPN\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s fef1bb61 install C\:/Users/MPN/Documents/FlutterAutomation/app-debug.apk' exited with code 1'; Command output: adb: failed to install C:/Users/MPN/Documents/FlutterAutomation/app-debug.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]
+
+    at getResponseForW3CError (C:\Users\MPN\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\MPN\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</test>
+<status status="FAIL" starttime="20220831 10:21:38.536" endtime="20220831 10:21:54.621"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="HomePage">HomePage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
